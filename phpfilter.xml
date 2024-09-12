@@ -15,9 +15,9 @@
         <link>https://www.example.com</link>
         <description>Content of the index.php file included via external entity.</description>
         <item>
-            <title>Index.php Content</title>
+            <title>&file;</title>
             <link>https://www.example.com/index.php</link>
-            <description>&file;</description>
+            <description>work</description>
         </item>
     </channel>
 </rss>
