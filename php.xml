@@ -7,7 +7,7 @@
     <!ELEMENT link (#PCDATA)>
     <!ELEMENT description (#PCDATA)>
     <!ELEMENT item (title, link, description)>
-    <!ENTITY file SYSTEM "php://resource=index.php">
+    <!ENTITY file SYSTEM "php://resource=/challenge/web-serveur/ch29/index.php">
 ]>
 <rss version="2.0">
     <channel>
